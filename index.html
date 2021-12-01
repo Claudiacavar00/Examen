@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 </title>
+
+    <style>
+
+        body{
+            margin: 30px;
+        }
+        header{
+            border-bottom: black dotted 2px;
+            }
+        
+        #direccion{
+            background-color: turquoise;
+            
+        }
+
+        fieldset{
+            border: dotted 1px;
+            width: 25vw;
+        }
+        input, select{
+            width: 25vw;
+        }
+
+        #pequeño{
+            font-size: small;
+        }
+        button{
+            background-color: turquoise;
+        }
+
+        footer{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+       <h3>petinder</h3>
+
+    </header>
+
+    <br>
+<main>
+    <h3>Hazte socio</h3>
+    <p>Colabora con Petinder haciéndonte socio por sólo 15 euros mensuales.
+        Con muy poco puedes ayudar mucho a nuestros amigos peludos. Además puedes comprar
+        nuestra exclusiva camiseta por sólo 10 euros que se añadirán al primer pago. Rellena el 
+        siguiente formulario para unirte a nosotros.</p>
+    
+    <form>
+        <fieldset>
+            <legend id="direccion">Dirección</legend><br>
+
+            <label for="cyn">Calle y número * </label><br>
+            <input type="text" id="cyn" value="Calle y número" required="required"><br><br>
+            
+            <label for="ciudad">Ciudad *</label><br>
+            <input type="text" id="ciudad" value="Ciudad" required><br><br>
+
+            <label for="prov">Provincia *</label><br>
+            <input type="text" id="prov" value="Provincia" required><br><br>
+
+            <label for="num">Codigo Postal *</label><br>
+            <input type="text" id="num"value="Codigo Postal "pattern="[1-5] {5}" maxlength="5" required><br><br>
+            
+            <label for="pais">País</label><br>
+            <select name="pais">
+                <option>España</option>
+                <option>Portugal</option>
+            </select>
+
+
+        </fieldset>
+    </form>
+
+    <div id="pequeño">
+    <p >*Todos los campos marcados son obligatorios.</p>
+    <p><input type="checkbox" value="21" name ="si" id="check"> He leído y acepto la política de privacidad y las conciones de uso.</p>
+
+    </div>
+
+    <br>
+    <button>Enviar</button>
+    </main>
+    <footer>
+        <p>2021  Claudia Cabello Vargas</p>
+    </footer>
+    
+    
+</body>
+</html>
